@@ -20,7 +20,7 @@ class _PaymentsScreenState extends State<PaymentsScreen> {
       if (_checked[i]) total += amounts[i];
     }
     
-    return total; 
+    return total;
   }
 
   int get _selectedCount => _checked.where((c) => c).length;
