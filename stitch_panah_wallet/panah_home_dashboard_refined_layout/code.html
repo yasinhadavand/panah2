@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Panah Resident Portal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#540d0d",
+                        "background-light": "#F9F8F6",
+                        "background-dark": "#121212",
+                    },
+                    fontFamily: {
+                        display: ["Outfit", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "1.25rem",
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        body { font-family: 'Outfit', sans-serif; -webkit-tap-highlight-color: transparent; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex justify-center">
+<main class="w-full max-w-md bg-background-light dark:bg-background-dark min-h-screen relative pb-24 shadow-2xl overflow-hidden">
+<header class="px-6 pt-8 pb-4 flex justify-between items-center">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary/20">
+<img alt="User Avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCq6uMHIe2gDaqvgCqVIJADb8pDowrhp5NHoQr_iM116858hRK3byokiM7tnTnd2AxgPjE2s4wV0pjiWQKTS0I_YngyEkuqek1CZHMgpaM6aJUMnyoDq2eW-d17UYPaZWrxhQPVfHCASTd82bWAM--I7yz4ha8znowaubmGoK38rPocjs9IM5Bb0XnhNet1FOyFlj2WOUDimV6QXPZYDkloX57jm4dV1pOehUVz7Qnt9N2pvhiEhR9HK_90cr-Jb0UHhGYyywMpoe4"/>
+</div>
+<div>
+<p class="text-[10px] uppercase tracking-widest text-primary/60 dark:text-primary/80 font-bold">Resident</p>
+<h1 class="text-xl font-bold tracking-tight text-primary">Panah</h1>
+</div>
+</div>
+<button class="w-10 h-10 flex items-center justify-center bg-white dark:bg-zinc-800 rounded-full shadow-sm">
+<span class="material-icons-outlined text-slate-400">notifications</span>
+</button>
+</header>
+<section class="px-6 py-4">
+<h2 class="text-3xl font-bold">Welcome back, Julian</h2>
+<div class="flex items-center gap-1 mt-1 text-slate-500 dark:text-slate-400">
+<span class="material-icons-outlined text-sm">location_on</span>
+<span class="text-sm">Villa 402 – The Gardens</span>
+</div>
+</section>
+<section class="px-6 mb-8">
+<div class="bg-primary p-6 rounded-3xl text-white relative overflow-hidden shadow-xl shadow-primary/20">
+<div class="flex justify-between items-start relative z-10">
+<p class="text-[10px] uppercase tracking-[0.2em] font-medium opacity-80">Total Balance</p>
+<span class="material-icons-outlined text-2xl opacity-80">account_balance_wallet</span>
+</div>
+<div class="mt-4 mb-6 relative z-10">
+<h3 class="text-4xl font-bold tracking-tight">$12,450.00</h3>
+</div>
+<div class="flex gap-2 relative z-10">
+<span class="bg-white/20 px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider flex items-center gap-1">
+<span class="material-icons-outlined text-[12px] text-amber-400">stars</span> Premium Tier
+                    </span>
+<button class="bg-white/20 px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider hover:bg-white/30 transition-colors">
+                        Top Up
+                    </button>
+</div>
+<div class="absolute -right-4 -bottom-4 w-32 h-32 bg-white/5 rounded-full blur-3xl"></div>
+</div>
+</section>
+<section class="px-6 mb-8">
+<div class="flex justify-between items-center mb-4">
+<h3 class="font-bold text-lg">Unit Consumption</h3>
+<button class="text-[10px] font-bold uppercase tracking-widest text-amber-800 dark:text-amber-500">Analytics</button>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-white dark:bg-zinc-900 p-4 rounded-3xl border-l-4 border-primary shadow-sm">
+<div class="flex justify-between items-center mb-6">
+<div class="w-8 h-8 rounded-lg bg-slate-50 dark:bg-zinc-800 flex items-center justify-center">
+<span class="material-icons-outlined text-amber-500 text-sm">bolt</span>
+</div>
+<span class="text-[10px] font-bold text-green-600 bg-green-50 dark:bg-green-900/20 px-2 py-0.5 rounded">-4%</span>
+</div>
+<p class="text-[10px] uppercase tracking-widest text-slate-400 font-bold">Electricity</p>
+<p class="text-xl font-bold">452 <span class="text-xs font-normal text-slate-400">kWh</span></p>
+</div>
+<div class="bg-white dark:bg-zinc-900 p-4 rounded-3xl border-l-4 border-amber-800/60 shadow-sm">
+<div class="flex justify-between items-center mb-6">
+<div class="w-8 h-8 rounded-lg bg-slate-50 dark:bg-zinc-800 flex items-center justify-center">
+<span class="material-icons-outlined text-blue-400 text-sm">water_drop</span>
+</div>
+<span class="text-[10px] font-bold text-red-600 bg-red-50 dark:bg-red-900/20 px-2 py-0.5 rounded">+2%</span>
+</div>
+<p class="text-[10px] uppercase tracking-widest text-slate-400 font-bold">Water</p>
+<p class="text-xl font-bold">12.4 <span class="text-xs font-normal text-slate-400">m³</span></p>
+</div>
+</div>
+</section>
+<section class="mb-8 overflow-hidden">
+<div class="px-6 flex justify-between items-center mb-4">
+<h3 class="font-bold text-lg">Access</h3>
+<button class="text-[10px] font-bold uppercase tracking-widest text-amber-800 dark:text-amber-500">Manage</button>
+</div>
+<div class="flex overflow-x-auto gap-4 px-6 no-scrollbar">
+<div class="min-w-[280px] bg-white dark:bg-zinc-900 rounded-3xl p-5 shadow-sm border border-slate-100 dark:border-zinc-800">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 bg-slate-50 dark:bg-zinc-800 rounded-xl flex items-center justify-center shrink-0">
+<span class="material-icons-outlined text-primary">fitness_center</span>
+</div>
+<div class="flex flex-col overflow-hidden">
+<div class="flex items-center gap-2 flex-wrap">
+<h4 class="font-bold text-slate-900 dark:text-white truncate">Health Club Elite</h4>
+<span class="bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400 text-[8px] font-bold px-1.5 py-0.5 rounded-sm uppercase tracking-tighter whitespace-nowrap">Active Sub</span>
+</div>
+<p class="text-[11px] text-slate-400 mt-0.5">Expires Oct 24, 2024</p>
+</div>
+</div>
+<div class="pt-4 border-t border-slate-50 dark:border-zinc-800 flex justify-between items-center">
+<span class="text-[10px] uppercase tracking-widest text-slate-400 font-bold">Entry Code</span>
+<span class="font-mono font-bold tracking-widest text-primary text-sm">GH-9921</span>
+</div>
+</div>
+<div class="min-w-[280px] bg-white dark:bg-zinc-900 rounded-3xl p-5 shadow-sm border border-slate-100 dark:border-zinc-800 opacity-60">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 bg-slate-50 dark:bg-zinc-800 rounded-xl flex items-center justify-center shrink-0">
+<span class="material-icons-outlined text-primary">restaurant</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-bold text-slate-900 dark:text-white">The Grand Dining</h4>
+<p class="text-[11px] text-slate-400 mt-0.5">Table Reservation</p>
+</div>
+</div>
+<div class="pt-4 border-t border-slate-50 dark:border-zinc-800 flex justify-between items-center">
+<span class="text-[10px] uppercase tracking-widest text-slate-400 font-bold">Guests</span>
+<span class="font-mono font-bold tracking-widest text-primary text-sm">4 PERSONS</span>
+</div>
+</div>
+</div>
+</section>
+<section class="px-6 mb-8">
+<div class="flex justify-between items-center mb-4">
+<h3 class="font-bold text-lg">Recent Updates</h3>
+<button class="text-[10px] font-bold uppercase tracking-widest text-amber-800 dark:text-amber-500">History</button>
+</div>
+<div class="space-y-3">
+<div class="bg-white dark:bg-zinc-900 p-4 rounded-3xl flex items-center gap-4 shadow-sm">
+<div class="w-12 h-12 bg-orange-50 dark:bg-orange-900/20 rounded-xl flex items-center justify-center shrink-0">
+<span class="material-icons-outlined text-orange-600 text-xl">inventory_2</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-bold text-sm">Package Delivered</h4>
+<span class="text-[9px] text-slate-400 font-medium">10:45 AM</span>
+</div>
+<p class="text-xs text-slate-500 truncate">Your Amazon package has been placed in...</p>
+</div>
+</div>
+<div class="bg-white dark:bg-zinc-900 p-4 rounded-3xl flex items-center gap-4 shadow-sm">
+<div class="w-12 h-12 bg-red-50 dark:bg-red-900/20 rounded-xl flex items-center justify-center shrink-0">
+<span class="material-icons-outlined text-red-600 text-xl">directions_car</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-bold text-sm">Valet Request</h4>
+<span class="text-[9px] text-slate-400 font-medium">09:15 AM</span>
+</div>
+<p class="text-xs text-slate-500 truncate">Your vehicle is now waiting for you at the...</p>
+</div>
+</div>
+<div class="bg-white dark:bg-zinc-900 p-4 rounded-3xl flex items-center gap-4 shadow-sm">
+<div class="w-12 h-12 bg-slate-50 dark:bg-zinc-800 rounded-xl flex items-center justify-center shrink-0">
+<span class="material-icons-outlined text-slate-600 text-xl">cleaning_services</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-bold text-sm">Housekeeping Ready</h4>
+<span class="text-[9px] text-slate-400 font-medium uppercase">Yesterday</span>
+</div>
+<p class="text-xs text-slate-500 truncate">The scheduled cleaning for Villa 402 is...</p>
+</div>
+</div>
+</div>
+</section>
+<section class="px-6 mb-12">
+<div class="flex justify-between items-center mb-4">
+<h3 class="font-bold text-lg">Concierge Services</h3>
+<button class="text-[10px] font-bold uppercase tracking-widest text-amber-800 dark:text-amber-500">Explore</button>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-white dark:bg-zinc-900 p-5 rounded-[2rem] shadow-sm flex flex-col items-center text-center">
+<div class="w-14 h-14 bg-amber-50 dark:bg-amber-900/20 rounded-2xl flex items-center justify-center mb-4">
+<span class="material-icons-outlined text-amber-700 text-2xl">fitness_center</span>
+</div>
+<h4 class="font-bold text-sm">Health Club</h4>
+<p class="text-[10px] text-slate-400 mb-4">Open until 11 PM</p>
+<button class="w-full py-2 bg-slate-100 dark:bg-zinc-800 text-slate-900 dark:text-white rounded-xl text-[10px] font-bold uppercase tracking-widest hover:bg-slate-200 transition-colors">Book Now</button>
+</div>
+<div class="bg-white dark:bg-zinc-900 p-5 rounded-[2rem] shadow-sm flex flex-col items-center text-center">
+<div class="w-14 h-14 bg-amber-50 dark:bg-amber-900/20 rounded-2xl flex items-center justify-center mb-4">
+<span class="material-icons-outlined text-amber-700 text-2xl">spa</span>
+</div>
+<h4 class="font-bold text-sm">Serenity Spa</h4>
+<p class="text-[10px] text-slate-400 mb-4">2 slots available</p>
+<button class="w-full py-2 bg-slate-100 dark:bg-zinc-800 text-slate-900 dark:text-white rounded-xl text-[10px] font-bold uppercase tracking-widest hover:bg-slate-200 transition-colors">Schedule</button>
+</div>
+</div>
+</section>
+<nav class="fixed bottom-6 left-1/2 -translate-x-1/2 w-[90%] max-w-[360px] bg-white/90 dark:bg-zinc-900/90 backdrop-blur-xl border border-white/20 dark:border-white/10 rounded-[2.5rem] shadow-2xl flex items-center justify-between px-2 py-2 z-50">
+<button class="flex flex-col items-center gap-1 px-4 py-2 text-primary">
+<span class="material-icons-outlined text-2xl">home</span>
+<span class="text-[8px] font-black uppercase">Home</span>
+</button>
+<button class="flex flex-col items-center gap-1 px-4 py-2 text-slate-400 dark:text-slate-500">
+<span class="material-icons-outlined text-2xl">account_balance_wallet</span>
+<span class="text-[8px] font-black uppercase">Wallet</span>
+</button>
+<div class="relative -top-6">
+<button class="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center text-white shadow-xl shadow-primary/40 ring-4 ring-white dark:ring-zinc-900">
+<span class="material-icons-outlined text-3xl">qr_code_scanner</span>
+</button>
+</div>
+<button class="flex flex-col items-center gap-1 px-4 py-2 text-slate-400 dark:text-slate-500">
+<span class="material-icons-outlined text-2xl">layers</span>
+<span class="text-[8px] font-black uppercase">Services</span>
+</button>
+<button class="flex flex-col items-center gap-1 px-4 py-2 text-slate-400 dark:text-slate-500">
+<span class="material-icons-outlined text-2xl">person_outline</span>
+<span class="text-[8px] font-black uppercase">Profile</span>
+</button>
+</nav>
+</main>
+
+</body></html>

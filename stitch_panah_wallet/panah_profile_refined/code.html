@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-fixed": "#1b1c1c",
+              "surface-container-high": "#e9e8e7",
+              "surface-container-low": "#f4f3f2",
+              "on-surface-variant": "#58413f",
+              "error-container": "#ffdad6",
+              "surface-container": "#eeeeed",
+              "secondary-fixed-dim": "#eac081",
+              "primary-fixed-dim": "#ffb3ae",
+              "surface-bright": "#faf9f8",
+              "primary": "#550007",
+              "on-surface": "#1a1c1c",
+              "surface": "#faf9f8",
+              "surface-container-lowest": "#ffffff",
+              "surface-variant": "#e3e2e1",
+              "error": "#ba1a1a",
+              "tertiary-container": "#3b3b3b",
+              "inverse-on-surface": "#f1f0f0",
+              "secondary": "#785924",
+              "on-secondary-container": "#795a25",
+              "on-error": "#ffffff",
+              "inverse-surface": "#2f3130",
+              "on-secondary-fixed-variant": "#5e410e",
+              "surface-container-highest": "#e3e2e1",
+              "tertiary-fixed-dim": "#c8c6c5",
+              "on-primary": "#ffffff",
+              "on-tertiary-fixed-variant": "#474747",
+              "on-primary-fixed": "#410004",
+              "tertiary-fixed": "#e4e2e1",
+              "outline-variant": "#dfbfbc",
+              "on-background": "#1a1c1c",
+              "on-error-container": "#93000a",
+              "surface-dim": "#dadad9",
+              "on-secondary-fixed": "#281800",
+              "on-primary-fixed-variant": "#8a1a1e",
+              "on-tertiary": "#ffffff",
+              "primary-fixed": "#ffdad7",
+              "on-primary-container": "#ff807a",
+              "inverse-primary": "#ffb3ae",
+              "background": "#faf9f8",
+              "secondary-container": "#ffd393",
+              "secondary-fixed": "#ffdeae",
+              "surface-tint": "#ab3332",
+              "on-secondary": "#ffffff",
+              "on-tertiary-container": "#a7a5a5",
+              "primary-container": "#7a0c14",
+              "outline": "#8c716f",
+              "tertiary": "#262626"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        background-color: #faf9f8;
+        color: #1a1c1c;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(20px);
+      }
+      .red-gradient {
+        background: linear-gradient(135deg, #7a0c14 0%, #550007 100%);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="font-body min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="bg-[#faf9f8] dark:bg-gray-950 flex justify-between items-center w-full px-6 py-4 fixed top-0 z-50">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Julian Vance professional headshot portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFRPon1s0ZdPw-KjM7gtz5iBdk4fFxR95HYjebVrxYqaF_nzWZQ1e136zoaIuYT0_FcP7HXD8bdKS9TMBpJ3fBswAxjM5qZap9hjYtP7uKB7Jo3aj4WmjPpphbYLTWMqoUXRKxKfYBJSlyDgSTCf_TS696PH3DcXMby2UTI5PqbOxDJ2VE_6fnUw7YDJGNLmGbCWSHS2n3Uu6zUKgnqBlGpMJjD9sEeIvmLecvlZ0nBeadhIyZznvZhjt0ZIzclZF-QXRYi_oUeIA"/>
+</div>
+<span class="font-['Manrope'] font-bold tracking-tight text-2xl font-extrabold text-[#7A0C14] dark:text-red-500 tracking-tighter">Panah</span>
+</div>
+<button class="text-gray-500 dark:text-gray-400 hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+</header>
+<main class="pt-24 px-6 max-w-2xl mx-auto space-y-12">
+<!-- Hero Profile Section -->
+<section class="space-y-6">
+<div class="space-y-2">
+<span class="font-label text-[11px] font-medium uppercase tracking-widest text-secondary">Personal Profile</span>
+<h1 class="font-headline text-4xl font-extrabold tracking-tight text-on-surface">Julian Vance</h1>
+<div class="flex items-center gap-4 pt-1">
+<div class="flex items-center gap-2 px-3 py-1 bg-surface-container-low rounded-full">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed-dim"></span>
+<span class="font-label text-xs font-semibold text-secondary">Unit 402</span>
+</div>
+<div class="flex items-center gap-2 px-3 py-1 bg-secondary-container rounded-full">
+<span class="material-symbols-outlined text-xs text-on-secondary-container">verified</span>
+<span class="font-label text-xs font-bold text-on-secondary-container uppercase tracking-wider">Resident Status</span>
+</div>
+</div>
+</div>
+<!-- Profile Bento Card -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-[0_20px_40px_rgba(26,28,28,0.04)] space-y-4 border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary text-3xl">contact_mail</span>
+<div>
+<p class="font-headline font-bold text-lg text-on-surface">Verified Contact</p>
+<p class="text-sm text-on-surface-variant">j.vance@heritage-residence.com</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-[0_20px_40px_rgba(26,28,28,0.04)] space-y-4 border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary text-3xl">event_available</span>
+<div>
+<p class="font-headline font-bold text-lg text-on-surface">Member Since</p>
+<p class="text-sm text-on-surface-variant">October 2022 • 2nd Year</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Settings List Section -->
+<section class="space-y-8">
+<div class="border-b border-outline-variant/15 pb-4">
+<h2 class="font-headline text-xl font-bold text-on-surface">Account Settings</h2>
+<p class="text-sm text-on-surface-variant mt-1 font-body">Manage your sanctuary and security preferences.</p>
+</div>
+<div class="space-y-4">
+<!-- Unit Details -->
+<button class="w-full flex items-center justify-between p-5 bg-surface-container-lowest rounded-xl hover:bg-surface-container transition-all duration-300 group border border-outline-variant/5">
+<div class="flex items-center gap-5">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-container-low rounded-lg group-hover:bg-white transition-colors">
+<span class="material-symbols-outlined text-primary">domain</span>
+</div>
+<div class="text-left">
+<p class="font-headline font-bold text-on-surface">Unit Details</p>
+<p class="text-xs text-on-surface-variant">Lease agreement, floor plan, and utilities</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+</button>
+<!-- Security -->
+<button class="w-full flex items-center justify-between p-5 bg-surface-container-lowest rounded-xl hover:bg-surface-container transition-all duration-300 group border border-outline-variant/5">
+<div class="flex items-center gap-5">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-container-low rounded-lg group-hover:bg-white transition-colors">
+<span class="material-symbols-outlined text-primary">admin_panel_settings</span>
+</div>
+<div class="text-left">
+<p class="font-headline font-bold text-on-surface">Security</p>
+<p class="text-xs text-on-surface-variant">Biometrics, PIN codes, and digital keys</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+</button>
+<!-- Notifications -->
+<button class="w-full flex items-center justify-between p-5 bg-surface-container-lowest rounded-xl hover:bg-surface-container transition-all duration-300 group border border-outline-variant/5">
+<div class="flex items-center gap-5">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-container-low rounded-lg group-hover:bg-white transition-colors">
+<span class="material-symbols-outlined text-primary">notifications_active</span>
+</div>
+<div class="text-left">
+<p class="font-headline font-bold text-on-surface">Notifications</p>
+<p class="text-xs text-on-surface-variant">Delivery alerts, concierge messages, events</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed-dim"></span>
+<span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+</div>
+</button>
+<!-- Language -->
+<button class="w-full flex items-center justify-between p-5 bg-surface-container-lowest rounded-xl hover:bg-surface-container transition-all duration-300 group border border-outline-variant/5">
+<div class="flex items-center gap-5">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-container-low rounded-lg group-hover:bg-white transition-colors">
+<span class="material-symbols-outlined text-primary">language</span>
+</div>
+<div class="text-left">
+<p class="font-headline font-bold text-on-surface">Language</p>
+<p class="text-xs text-on-surface-variant">English (United Kingdom)</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-label text-[10px] font-bold text-secondary uppercase tracking-widest bg-secondary-container/30 px-2 py-0.5 rounded">EN-UK</span>
+<span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+</div>
+</button>
+<!-- Logout -->
+<button class="w-full flex items-center justify-between p-5 bg-surface-container-lowest rounded-xl hover:bg-error-container/20 transition-all duration-300 group border border-outline-variant/5">
+<div class="flex items-center gap-5">
+<div class="w-12 h-12 flex items-center justify-center bg-error-container/10 rounded-lg">
+<span class="material-symbols-outlined text-error">logout</span>
+</div>
+<div class="text-left">
+<p class="font-headline font-bold text-error">Logout</p>
+<p class="text-xs text-error/60">Securely sign out of your resident account</p>
+</div>
+</div>
+</button>
+</div>
+</section>
+<!-- Membership Card Splash -->
+<section class="relative red-gradient rounded-xl p-8 overflow-hidden shadow-2xl">
+<div class="relative z-10 space-y-6">
+<div class="flex justify-between items-start">
+<span class="font-headline font-extrabold text-white text-xl tracking-tighter">PANAH HERITAGE</span>
+<span class="material-symbols-outlined text-white/40">contactless</span>
+</div>
+<div class="pt-4">
+<p class="font-body text-white/60 text-xs tracking-widest uppercase">Concierge Member</p>
+<p class="font-headline text-2xl text-white font-bold">JULIAN VANCE</p>
+</div>
+<div class="flex justify-between items-end">
+<p class="font-body text-white/40 text-[10px] tracking-widest">VALID THRU 10/25</p>
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full border border-white/20 bg-white/10 backdrop-blur-md flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-xs" style="color: #eac081;">spa</span>
+</div>
+<div class="w-8 h-8 rounded-full border border-white/20 bg-white/10 backdrop-blur-md flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-xs" style="color: #eac081;">directions_car</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Decorative circle -->
+<div class="absolute -bottom-12 -right-12 w-48 h-48 bg-white/5 rounded-full blur-3xl"></div>
+<div class="absolute -top-12 -left-12 w-32 h-32 bg-secondary-fixed-dim/10 rounded-full blur-2xl"></div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl border-t border-[#dfbfbc]/15 shadow-[0_-20px_40px_rgba(26,28,28,0.04)] fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 transition-all duration-300 ease-in-out rounded-t-xl">
+<a class="flex flex-col items-center justify-center text-gray-400 dark:text-gray-600 hover:text-[#785924] dark:hover:text-yellow-600 transition-all duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium uppercase tracking-widest mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-400 dark:text-gray-600 hover:text-[#785924] dark:hover:text-yellow-600 transition-all duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined">account_balance_wallet</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium uppercase tracking-widest mt-1">Wallet</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-400 dark:text-gray-600 hover:text-[#785924] dark:hover:text-yellow-600 transition-all duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined">room_service</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium uppercase tracking-widest mt-1">Services</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-400 dark:text-gray-600 hover:text-[#785924] dark:hover:text-yellow-600 transition-all duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined">qr_code_2</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium uppercase tracking-widest mt-1">Access</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#7A0C14] dark:text-red-400 font-bold hover:text-[#785924] dark:hover:text-yellow-600 transition-all duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium uppercase tracking-widest mt-1">Profile</span>
+</a>
+</nav>
+</body></html>
