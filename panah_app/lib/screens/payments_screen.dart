@@ -19,7 +19,8 @@ class _PaymentsScreenState extends State<PaymentsScreen> {
     for (int i = 0; i < _checked.length; i++) {
       if (_checked[i]) total += amounts[i];
     }
-    return total;
+    
+    return total; 
   }
 
   int get _selectedCount => _checked.where((c) => c).length;
